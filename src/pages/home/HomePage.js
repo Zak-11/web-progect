@@ -1,14 +1,17 @@
 import React from 'react';
 import './home.scss'
 import {NavLink} from "react-router-dom";
-import PowersLap from '../Videos/pexels-kampus-production-8037388.mp4'
-
-
+import PowersLap from '../../Videos/pexels-kampus-production-8037388.mp4'
+import HomeCon from '../../image/homeContact.jpg'
+import Trevel from '../../image/photo_2021-11-07_02-23-59.jpg'
+import  Gall from '../../image/image0 (4).jpeg'
+import  AboutMy from '../../image/photo_2021-11-06_19-26-47.jpg'
 function HomePage() {
     return (
         <>
 
             <div className="intro">
+
                 <div className="video">
                     <video className="video__media" loop muted autoPlay>
                         <source src={PowersLap}    type="video/mp4"/>
@@ -19,17 +22,17 @@ function HomePage() {
                     <div className="container">
                         <h1>Kristina Turdo</h1>
                         <p>Photograph Artist Creative person in everything.</p>
-
-
                     </div>
                 </div>
+
             </div>
 
             <section className={'sec1'}/>
 
             <div className={'secText'}>
                 <div className={'secBlock'}>
-
+                    <img src={AboutMy}
+                         alt='mySelf'/>
 
                     <NavLink style={{textDecoration: 'none'}} to="/about">
                         <h3 className={'secTextTitle'}>ABUT</h3>
@@ -50,7 +53,7 @@ function HomePage() {
             <div className={'secText'}>
                 <div className={'secBlock'}>
 
-                    <img src={'https://cdn1.savepice.ru/uploads/2021/11/10/00db4fb5f3ac73439025a8dd25ac4a84-full.jpg'}
+                    <img src={Gall}
                          alt='mySelf'/>
                     <NavLink style={{textDecoration: 'none'}} to="gallery">
                         <h3 className={'secTextTitle'}>GALLERIA</h3>
@@ -71,7 +74,7 @@ function HomePage() {
 
                 <div className={'secBlock'}>
 
-                    <img src={'https://cdn1.savepice.ru/uploads/2021/11/10/47926a741c3f96b2fed00fdeaae6ebc8-full.jpg'}
+                    <img src={Trevel}
                          alt='mySelf'/>
                     <NavLink style={{textDecoration: 'none'}} to="/blog">
                         <h3 className={'secTextTitle'}>TRAVEL BLOG</h3>
@@ -90,7 +93,7 @@ function HomePage() {
             <div className={'secText'}>
                 <div className={'secBlock'}>
 
-                    <img src={'https://cdn1.savepice.ru/uploads/2021/11/10/82cfdc415bdc0b49124263a0f5976fd9-full.jpg'}
+                    <img src={HomeCon}
                          alt='mySelf'/>
                     <NavLink style={{textDecoration: 'none'}} to="/contact">
                         <h3 className={'secTextTitle'}>CONTACT</h3>
@@ -111,6 +114,6 @@ function HomePage() {
 
         </>
     );
-};
+}
 
 export default HomePage;
