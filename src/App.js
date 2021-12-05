@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./components/header";
+import Header from "./components/header/header";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faAt} from "@fortawesome/free-solid-svg-icons";
 import {Route, Routes} from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Gallery from "./pages/Gallery";
 import Photos from "./pages/Photos";
-import Blog from "./pages/Blog";
+import Blog from "./pages/blog/Blog";
 import Contact from "./pages/Contact";
 
 
