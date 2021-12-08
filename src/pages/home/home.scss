@@ -27,6 +27,7 @@ section {
 .sec2 {
   background: url('../../image/1-_4_.jpg')no-repeat center / cover;
   background-attachment: fixed;
+  width: 100%;
 }
 .sec3 {
   background: url(https://cdn1.savepice.ru/uploads/2021/11/7/382c4894d5aec1f4e4de430da2138ed6-full.jpg)no-repeat center / cover;
@@ -44,6 +45,8 @@ section {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 
 
 }
