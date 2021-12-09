@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../../image/logo.png";
+import logo from "../image/logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTelegram} from "@fortawesome/free-brands-svg-icons";
-import './HeadeFix.scss'
+import './Header.scss'
 import {faListUl, faWindowClose} from "@fortawesome/free-solid-svg-icons";
 
 
-const HeaderFix = () => {
+const Header = () => {
     const [isMobile, setIsMobile] =useState(false)
 
     return (
@@ -55,4 +55,4 @@ const HeaderFix = () => {
     );
 };
 
-export default HeaderFix;
+export default Header;

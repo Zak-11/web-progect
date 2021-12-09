@@ -33,6 +33,15 @@ $head_color: #c2970a;
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  transition: 0.2s;
+  &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    color: $head_color;
+    transition: 0.3s ease;
+    opacity: 1;
+  }
 }
 .home,
 .gallery,
