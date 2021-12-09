@@ -43,14 +43,14 @@ const Header = () => {
                     <FontAwesomeIcon className={'singnup'} icon={faTelegram} />
                 </a>
             </ul>
-            <button className={'mobile-menu-icon'}
+            <div className={'mobile-menu-icon'}
                     onClick={() => {setIsMobile(!isMobile)}}
              >
                 {isMobile ? ( <FontAwesomeIcon icon={faWindowClose} color={' white'}/>)
                     :(<FontAwesomeIcon icon={faListUl} color={' white'}/>
                     ) }
 
-            </button>
+            </div>
         </div>
     );
 };
