@@ -3,7 +3,7 @@ import './nav.scss'
 import {NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTelegram} from "@fortawesome/free-brands-svg-icons";
-import Menu from "../Menu/Menu";
+
 
 
 
