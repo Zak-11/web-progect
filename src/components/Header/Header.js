@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../image/logo.png";
+import logo from "../../image/logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import './Header.scss'
@@ -22,11 +22,9 @@ const Header = () => {
             <ul className={ isMobile ? 'nav-links-mobile' :'nav-links' }
             onClick={() => setIsMobile(false)}
             >
-                <NavLink className={'home'} to="./">
-                    <li >HOME</li>
-                </NavLink>
 
-                <NavLink className={'gallery'} to="/gallery">
+
+                <NavLink className={'gallerya'} to="/gallery">
                     <li >GALLERY</li>
                 </NavLink>
                 <NavLink className={'photo'} to="/photos">

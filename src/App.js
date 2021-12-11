@@ -1,12 +1,13 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
-import HomePage from "./pages/home/HomePage";
+
 import About from "./pages/about/About";
 import Gallery from "./pages/gallery/Gallery";
 import Photos from "./pages/photos/Photos";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import HomePages from "./pages/HomePage/HomePages";
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
 <Routes>
 
-    <Route path="/" element={<HomePage/>} />
+    <Route path="/" element={<HomePages/>} />
     <Route path="/about" element={<About/>}/>
     <Route path="/gallery" element={<Gallery/>}/>
     <Route path="/photos" element={<Photos/>}/>

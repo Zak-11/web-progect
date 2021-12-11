@@ -1,2 +1,9 @@
-@import "../../../node_modules/video-react/styles/scss/video-react";
+.gallery_wrapper {
+  min-height: 100vh;
+  background-color: #a14013;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 

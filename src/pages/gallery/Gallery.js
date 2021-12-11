@@ -4,8 +4,7 @@ import './GalliryStyles.scss'
 
 const Gallery = () => {
     return (
-        <div>
-
+        <div className={'gallery_wrapper'}>
 
             <h1>Gallery</h1>
         </div>
