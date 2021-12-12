@@ -44,6 +44,14 @@ const Contact = () => {
                     </div>
                     <div className="row">
                         <div className="col-25">
+                            <label htmlFor="fname">Email</label>
+                        </div>
+                        <div className="col-75">
+                            <input type="text" id="fname" name="Email" placeholder="Your Email.."/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-25">
                             <label htmlFor="Continent">Continent</label>
                         </div>
                         <div className="col-75">
