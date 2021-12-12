@@ -1,111 +1,100 @@
-.abutContact {
+.contact_wrapper {
+  height: 100vh;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+
+}
+
+input[type=submit] {
+  background-color: #8a8585;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #a46512;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-
+  width: 40%;
+  border-radius: 5px;
+  background-color:  #c7bcad;
+  padding: 20px;
 }
 
-.imageAbut {
-  max-height: 100vh;
-  overflow: hidden;
-  position: relative;
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: rgba(24, 79, 54, 0.45);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  img {
-    width: 100%;
-  }
-}
-.contactContent {
-  position:relative;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-  display: flex;
-  background: #ffffff;
-  border-radius: 20px;
-  max-width: 1080px;
-  margin: 50px auto;
-  height: 640px;
-
+.col-25 {
+  float: top;
+  width: 25%;
+  margin-top: 6px;
 }
 
-
-
-
-.contact {
+.col-75 {
+  float: left;
   width: 100%;
-  height: 100%;
-}
-.sectionHeader {
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
-  color: #2c2929;
-  text-transform: uppercase;
-  letter-spacing: 6px;
+  margin-top: 6px;
 }
 
-.contactWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 30px;
-  position: relative;
-  max-width: 840px;
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.formHorizontal {
-  max-width: 400px;
-  font-weight: 400;
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input, textarea, [type=submit] {
+    width: 100%;
+    margin-top: 0;
+
+  }
+  .container{
+    width: 100%;
+    margin-top: 0;
+    justify-content: center;
+  }
 }
-.formControl, textarea {
-  width: 400px;
-  padding: 10px;
-  margin: 15px;
-  color: #131111;
-  letter-spacing: 1px;
-}
-.sendButton {
-  background: #252828;
-  margin: 15px;
-  height: 30px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-.altSendButton {
-  padding: 4px;
-  color: white;
-  width: 400px;
-  height: 30px;
-  transition: all .2s ease-in-out;
-}
-.sendText {
-  display: block;
-  margin: 15px;
-  letter-spacing: 3px;
-}
-.altSendButton:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-.imgContact {
-  display: inline-block;
-  background-color: rgba(90,0,0,0);
-  line-height: 0;
-  text-shadow: 0 1px 0 #3e3737;
-  border-radius: 21px 0  0  21px;
-}
-.imgContact img {
-  border-radius: 21px 0  0  21px;
+@media screen and (max-width: 400px) {
+  .col-25, .col-75, input, textarea[type=submit] {
+    width: 100%;
+    margin: 1%;
+  }
+  .container{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  form {
+    padding: 10%;
+  }
 
 
 }

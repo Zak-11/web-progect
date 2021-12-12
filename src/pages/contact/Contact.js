@@ -1,8 +1,8 @@
 import React, {useRef} from 'react';
 import emailjs from 'emailjs-com'
-import ContPhoto from '../../image/contact.jpeg'
-import ContFloren from '../../image/contactFlor.jpg'
 import './Contact.scss'
+
+
 const Contact = () => {
     const form = useRef();
 
@@ -20,56 +20,59 @@ const Contact = () => {
 
     return (
 
-        <div className={'abutContact'}>
-
-            <div className={'imageAbut'}>
-                <img src={ContFloren}
-                     alt='mySelf'/>
-                <h1>CONTACT </h1>
-            </div>
+        <div className={'contact_wrapper'}>
 
 
-            <div className={'contactContent'}>
-                <div className={'imgContact'}>
-                    <img src={ContPhoto} alt={'contact'}/>
-                </div>
-                <div>
-                    <section id={'contact'}>
+            <div className={'container'}>
 
-
-                        <div className={'contactWrapper'}>
-
-                            <form className={'formHorizontal'} ref={form} onSubmit={sendEmail}>
-
-                                <input className={'formControl'} placeholder="NAME"
-                                       type="text"
-                                       name="name"
-                                       required/>
-
-
-                                <input className={'formControl'}
-                                       type="email"
-                                       placeholder="EMAIL"
-                                       name="user_email"/>
-
-
-                                <textarea className={'formControl'} rows="10"
-                                          name="message"
-                                          placeholder="MESSAGE"
-                                          required/>
-                                <button className={'sendButton'}
-                                        type="submit" value="SEND">
-                                    <div className={'altSendButton'}>
-                                        <i className="fa fa-envelope"/><span className={'sendText'}>SEND</span>
-                                    </div>
-                                </button>
-
-                            </form>
+                <form ref={form} onSubmit={sendEmail}>
+                    <div className="row">
+                        <div className="col-25">
+                            <label htmlFor="fname">First Name</label>
                         </div>
-                    </section>
-
-
-                </div>
+                        <div className="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-25">
+                            <label htmlFor="lname">Last Name</label>
+                        </div>
+                        <div className="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-25">
+                            <label htmlFor="Continent">Continent</label>
+                        </div>
+                        <div className="col-75">
+                            <select id="country" name="Continent">
+                                <option value="Asia">Asia</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North America">North America</option>
+                                <option value="South America">South America</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Antarctica">Antarctica</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-25">
+                            <label htmlFor="subject">Subject</label>
+                        </div>
+                        <div className="col-75">
+                        <textarea type="submit"
+                                  name="subject"
+                                  placeholder="Write something.."
+                                  style={{height: 150, margin: 0}}/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <input type="submit" value="Submit"/>
+                    </div>
+                </form>
             </div>
         </div>
 

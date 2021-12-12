@@ -50,6 +50,7 @@ const HomePages = () => {
             </div>
 
             <div className={'galliry_home'}>
+
                 <div className={'gallery'}>
                     <img src={Weret} alt={'my dey'}/>
                     <img src={Ferta} alt={'my dey'}/>
