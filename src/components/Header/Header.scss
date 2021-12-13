@@ -6,7 +6,8 @@ $head_color: #252424;
   align-items: center;
   height: 75px;
   color: white;
-  position: fixed;
+  position: absolute;
+  z-index: 50;
   width: 100vw;
 }
 
@@ -65,6 +66,7 @@ $head_color: #252424;
 @media screen and (max-width: 780px) {
   .navbar{
     background-color: #100f0f;
+
   }
   .header__logo{
     width: 50%;
