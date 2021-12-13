@@ -1,36 +1,31 @@
-$head_color: #efc8e4;
+$head_color: #252424;
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 75px;
-  background-color: #8a8585;
   color: white;
   position: fixed;
   width: 100vw;
 }
 
-.logo{
 
-}
+
+
+
 .navbar-logo {
   justify-content: start;
-  margin-left: 20px;
   cursor: pointer;
-  color: white;
-  &:hover {
-    color: $head_color;
+  align-items: center;
 
-  }
 }
 
 .header__logo {
-  border-radius: 50%;
-  background-color: white;
-  width: 60px;
-  height: 60px;
+  width: 20vw;
+  height: 20vh;
 }
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -44,8 +39,8 @@ $head_color: #efc8e4;
 .contact,
  {
   color: white;
-  font-size: 20px;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 20px 20px;
   margin: 0 10px;
   &:hover {
     color: $head_color;
@@ -68,17 +63,21 @@ $head_color: #efc8e4;
 
 
 @media screen and (max-width: 780px) {
+  .navbar{
+    background-color: #100f0f;
+  }
+  .header__logo{
+    width: 50%;
+    height: 30%;
+  }
   .logo {
     display: flex;
     position: absolute;
-    top: 5px;
-    left: 25px;
+    align-items: start;
+    left: 15px;
   }
-  .navbar-logo {
-    h2 {
-      font-size: 20px;
-    }
-  }
+
+
   .nav-links {
     display: none;
   }
@@ -86,10 +85,11 @@ $head_color: #efc8e4;
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #a49a9a;
-    left: 0;
+    background-color: #3b3939;
+    align-items: start;
     top: 74px;
-    width: 100%;
+    width: 60vh;
+    height: 100vh;
     transition: all 0.5s ease-out;
     z-index: 50;
 
@@ -109,14 +109,15 @@ $head_color: #efc8e4;
   }
 
   .mobile-menu-icon {
-   display: block;
+    display: block;
+    align-items: center;
     position: absolute;
+
     font-size: 30px;
     color: white;
-    background-color: #a49a9a;
+    background-color: black;
     outline: none;
-    top: 10px;
-    right: 25px;
+    right: 20px;
     z-index: 50;
     &:hover {
       color: $head_color;

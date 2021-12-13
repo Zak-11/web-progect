@@ -14,16 +14,39 @@ import Wer from './../../image/image1 (4).jpeg'
 import Ferta from './../../image/image0 (13).jpeg'
 import Fert from './../../image/image0 (3).jpeg'
 import Dert from './../../image/AnyConv.com__1 (7).jpeg'
+import PowersLap from '../../Videos/pexels-kampus-production-8037388.mp4'
+
 
 const HomePages = () => {
     return (
         <div className={'home_wrapper'}>
 
+            <div className="intro">
+                <div className="video">
+                    <video className="video__media" loop muted autoPlay>
+                        <source src={PowersLap}    type="video/mp4"/>
+                    </video>
+                </div>
+
+                <div className="intro_content">
+                    <div className="container">
+                        <h1>Kristina Turdo</h1>
+                        <p>Photograph Artist Creative person in everything.</p>
+
+
+                    </div>
+                </div>
+            </div>
             <div className={'home_page'}>
                 <div className={'description'}>
-                    <h1>KRISTINA TURDO</h1>
-                    <p>An artist, photographer, designer <br/>
-                        is a creative person in everything.</p>
+
+                    <div className="intro">
+                        <div className="video">
+                            <video className="video__media" loop muted autoPlay>
+                                <source src={PowersLap}    type="video/mp4"/>
+                            </video>
+                        </div>
+                    </div>
                 </div>
 
             </div>

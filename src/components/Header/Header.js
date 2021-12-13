@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../../image/logo.png";
+import logo from "../../image/pngwing.com (1).png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import './Header.scss'
@@ -14,8 +14,8 @@ const Header = () => {
         <div className={'navbar'}>
             <NavLink className={"logo"} to={'./'}>
                 <h2 className={'navbar-logo'}>
-                    <img className={'header__logo'} src={logo} alt="Logo"/>
-                    KRISTINA TURDO
+                    <img className={'header__logo'}  src={logo} alt="Logo"/>
+
                 </h2>
             </NavLink>
 
@@ -37,9 +37,9 @@ const Header = () => {
                     <li>CONTACT</li>
                 </NavLink>
 
-                <a href="https://t.me/Kristina_Zak">
+             {/*   <a href="https://t.me/Kristina_Zak">
                     <FontAwesomeIcon className={'singnup'} icon={faTelegram} />
-                </a>
+                </a>*/}
             </ul>
             <div className={'mobile-menu-icon'}
                     onClick={() => {setIsMobile(!isMobile)}}
