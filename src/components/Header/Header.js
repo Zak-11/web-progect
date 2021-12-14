@@ -37,9 +37,7 @@ const Header = () => {
                     <li>CONTACT</li>
                 </NavLink>
 
-             {/*   <a href="https://t.me/Kristina_Zak">
-                    <FontAwesomeIcon className={'singnup'} icon={faTelegram} />
-                </a>*/}
+
             </ul>
             <div className={'mobile-menu-icon'}
                     onClick={() => {setIsMobile(!isMobile)}}

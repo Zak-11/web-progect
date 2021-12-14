@@ -1,25 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './HomePages.scss'
-import Trres from './../../image/photo_2021-11-06_19-26-47.jpg'
-import Des from './../../image/image0.jpeg'
-import Asd from './../../image/image2 (12).jpeg'
-import Ygh from './../../image/AnyConv.com__1 (19).jpeg'
-import Iop from './../../image/AnyConv.com__1 (22).jpeg'
-import Brt from './../../image/image9.jpeg'
-import Req from './../../image/AnyConv.com__1 (10).jpeg'
-import Yrt from './../../image/AnyConv.com__1 (9).jpeg'
-import Weret from './../../image/image0 (1).jpeg'
-import Ferts from './../../image/image55.jpeg'
-import Wer from './../../image/image1 (4).jpeg'
-import Ferta from './../../image/image0 (13).jpeg'
-import Fert from './../../image/image0 (3).jpeg'
-import Dert from './../../image/AnyConv.com__1 (7).jpeg'
-import Trr from './../../image/img.png'
+import Trres from './../../image/Untitled2.png'
+import Tar from './../../image/1-_4_.jpg'
+import Weret from "../../image/image0 (1).jpeg";
+import Ygh from "../../image/AnyConv.com__1 (19).jpeg";
+import Des from "../../image/image0.jpeg";
+import Iop from "../../image/AnyConv.com__1 (22).jpeg";
 import PowersLap from '../../Videos/pexels-kampus-production-8037388.mp4'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF} from "@fortawesome/free-brands-svg-icons";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 
 
 const HomePages = () => {
+
+        AOS.init ()
+
+
     return (
+
         <div className={'home_wrapper'}>
 
             <div className="intro">
@@ -38,8 +44,8 @@ const HomePages = () => {
             <div className={'home_page'}>
                 <div className={'description'}>
 
-                    <p>An artist, photographer, <br/>designer
-                        is a creative <br/>person in everything.</p>
+                    <p data-aos="tracking-in-expand-fwd-top">An artist, photographer, designer<br/>
+                        is a creative person in everything.</p>
                 </div>
 
             </div>
@@ -47,48 +53,66 @@ const HomePages = () => {
 
             <div className={'about_home'}>
                 <div className={'about_wrapper'}>
+
+
                     <div className={'about_text'}>
-                        <h2>Kristina Turdo</h2>
-                        <p>“The artist's eye often stops at <br/>
-                            what ordinary people do not see <br/>
-                            anything remarkable; an accidental<br/>
-                            sun crossing a spot, or shadow,<br/>
-                            awaken a whole chain of thoughts, <br/>
-                            feelings, and imagery. "</p>
+                        <img data-aos="fade-up-right" data-aos-duration="600" src={Trres} alt={'my dey'}/>
                     </div>
 
                     <div className={'about-image'}>
-                        <img src={Trres} alt={'my dey'}/>
+                        <img  data-aos="fade-up-left" data-aos-duration="600"src={Tar} alt={'my dey'}/>
                     </div>
 
 
+
+
+
                 </div>
             </div>
 
-            <div className={'galliry_home'}>
 
-                <div className={'gallery'}>
+
+            <div className={'video_home'}>
+
+
+                <div className="wave_inner">
+                <figure className="wave">
                     <img src={Weret} alt={'my dey'}/>
-                    <img src={Ferta} alt={'my dey'}/>
-                    <img src={Req} alt={'my dey'}/>
+                </figure>
+                <figure className="wave">
                     <img src={Ygh} alt={'my dey'}/>
+                </figure>
+                <figure className="wave">
                     <img src={Des} alt={'my dey'}/>
-                    <img src={Ferts } alt={'my dey'}/>
-                    <img src={Wer} alt={'my dey'}/>
-                    <img src={Yrt} alt={'my dey'}/>
-                    <img src={Fert} alt={'my dey'}/>
-                    < img src={Brt} alt={'my dey'}/>
-                    <img src={Asd} alt={'my dey'}/>
-                    < img src={Iop} alt={'my dey'}/>
-                    < img src={Dert} alt={'my dey'}/>
-
-                </div>
-
-
+                </figure>
+                <figure className="wave">
+                    <img src={ Iop} alt={'my dey'}/>
+                </figure>
             </div>
+            </div>
+
 
             <div className={'footer_home'}>
-                <h2>FOOTER</h2>
+                <div className={'footer_contact'}>
+                    <p>Follow</p>
+
+                      <div className={'footer_icons'}>
+                          <a href="https://t.me/Kristina_Zak">
+                              <FontAwesomeIcon className={'singnup'} icon={faTelegram} />
+                          </a>
+                          <a href="https://t.me/Kristina_Zak">
+                              <FontAwesomeIcon className={'singnup'} icon={faFacebookF} />
+                          </a>
+                          <a href="https://t.me/Kristina_Zak">
+                              <FontAwesomeIcon className={'singnup'} icon={faInstagram} />
+                          </a>
+                      </div>
+
+
+
+
+
+            </div>
             </div>
         </div>
 

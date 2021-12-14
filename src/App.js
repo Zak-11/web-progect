@@ -1,6 +1,5 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
-
 import About from "./pages/about/About";
 import Gallery from "./pages/gallery/Gallery";
 import Photos from "./pages/photos/Photos";
@@ -8,7 +7,6 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/Header/Header";
 import HomePages from "./pages/HomePage/HomePages";
-
 
 
 

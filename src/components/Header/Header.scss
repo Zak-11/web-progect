@@ -9,6 +9,8 @@ $head_color: #252424;
   position: absolute;
   z-index: 50;
   width: 100vw;
+
+
 }
 
 
@@ -40,12 +42,14 @@ $head_color: #252424;
 .contact,
  {
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   padding: 20px 20px;
   margin: 0 10px;
   &:hover {
     color: $head_color;
-
+  }
+  li{
+    font-family:  'Barlow Condensed', sans-serif;
   }
 }
 .singnup {
@@ -90,7 +94,7 @@ $head_color: #252424;
     background-color: #3b3939;
     align-items: start;
     top: 74px;
-    width: 60vh;
+    width: 100vw;
     height: 100vh;
     transition: all 0.5s ease-out;
     z-index: 50;
@@ -106,6 +110,7 @@ $head_color: #252424;
     text-align: center;
     padding: 32px;
     transition: all 0.5s ease-out;
+    font-family:  'Barlow Condensed', sans-serif;
 
 
   }
@@ -114,7 +119,6 @@ $head_color: #252424;
     display: block;
     align-items: center;
     position: absolute;
-
     font-size: 30px;
     color: white;
     background-color: black;
