@@ -180,7 +180,7 @@ h1 {
   height: 70vh;
   width: 30vw;
   display: flex;
-  margin: 0 0 0 755px;
+  margin: 0 0 0 460px;
 
 
   img{
@@ -188,6 +188,9 @@ h1 {
     object-position: center;
   }
 }
+
+
+
 
 @media screen and (max-width: 1200px),(max-width: 780px) {
   .about_home{

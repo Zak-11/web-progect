@@ -13,6 +13,7 @@ import Brt from "../../image/image9.jpeg";
 import Asd from "../../image/image2 (12).jpeg";
 import Iop from "../../image/AnyConv.com__1 (22).jpeg";
 import Dert from "../../image/AnyConv.com__1 (7).jpeg";
+import Footer from "../../components/Footer/Footer";
 
 
 const Gallery = () => {
@@ -45,7 +46,7 @@ const Gallery = () => {
 
 
             </div>
-
+<Footer/>
 
         </div>
     );
