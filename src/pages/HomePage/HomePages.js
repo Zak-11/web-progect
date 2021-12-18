@@ -11,8 +11,6 @@ import Rar from './../../image/image0 (13).jpeg'
 import Tarin from './../../image/image1 (11).jpeg'
 import Rara from './../../image/image0 (12).jpeg'
 import Raser from './../../image/image2 (13).jpeg'
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Fade from 'react-reveal/Fade';
@@ -28,21 +26,19 @@ const HomePages = () => {
     return (
 
         <div className={'home_wrapper'}>
-            <div className={'home_page'}>
+          <div className={'home_page'}>
                 <div className={'description'}>
                     <Fade top>
                         <h2>Kristina Turdo</h2>
-                        {/*<p> An artist, photographer, designer<br/>
+                       {/* <p> An artist, photographer, designer<br/>
                             is a creative person in everything. </p>*/}
                     </Fade>
                 </div>
             </div>
 
 
-            <div className={'my_project'}>
+          <div className={'my_project'}>
                 <div className={'project_wrapper'}>
-
-
                     <div className={'project_start'} >
                     <img className={'project_img'} src={Rar} alt={'my dey'}/>
 
@@ -59,7 +55,7 @@ const HomePages = () => {
 
 
 
-                <div className={'about_wrapper'}>
+              <div className={'about_wrapper'}>
                     <div className={'home_text'}>
                         <RubberBand>
                         <h2> MY PROCESS OF WORK AND INSPIRATION</h2>
@@ -84,6 +80,7 @@ const HomePages = () => {
 
 
 
+
             <div className="intro">
                 <div className="video">
                     <video className="video__media" loop muted autoPlay>
@@ -96,7 +93,8 @@ const HomePages = () => {
             </div>
 
 
-            <div className={'video_home'}>
+
+        <div className={'video_home'}>
                 <div className="wave_inner">
                     <figure className="wave">
                         <img data-aos="fade-up-right" data-aos-duration="600" src={Weret} alt={'my dey'}/>
