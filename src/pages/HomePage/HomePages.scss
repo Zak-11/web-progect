@@ -186,13 +186,24 @@ h1 {
   height: 80vh;
 
   img{
+
+    position: absolute;
     display: flex;
     justify-content: space-between;
   }
 
 }
 
+.project_text{
+  position: relative;
+  color: white;
+  font-size: 250%;
+  p{
+    position: absolute;
 
+  }
+
+}
 
 h2 {
   font-family: 'Barlow Condensed', sans-serif;
@@ -208,6 +219,9 @@ h2 {
     width: 49.5vw;
     height: 60vh;
     padding-right: 0;
+  }
+  .my_project{
+    height: auto;
   }
 
 }
@@ -297,20 +311,24 @@ h2 {
 @media screen and (max-width:1200px) {
   .about_wrapper{
     margin-top: 30px;
+
+
   }
   .container_start {
-    margin-bottom: 30px;
-    margin-left: 40px;
+    margin-bottom: 50px;
+
   }
   .container_between {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
   }
   .container_end {
-    margin-left: 40px;
+    margin-bottom: 50px;
   }
 
   .home_text {
     margin-left: 25px;
+    margin-right: 40px;
   }
   h2 {
     font-size: 30%;
@@ -322,16 +340,25 @@ h2 {
     margin-top: 30px;
   }
   .container_start {
+    margin-left: 50px;
     margin-bottom: 30px;
   }
   .container_between {
     margin-bottom: 30px;
+    margin-left: 50px;
+  }
+  .container_end {
+    margin-left: 50px;
+    margin-right: 0;
   }
   .home_text {
-    margin-left: 15px;
+    margin-left: 60px;
+    padding: 10px;
+    margin-bottom: 30px;
+
   }
   h2 {
-    font-size: 30%;
+    font-size: 20%;
   }
 }
 

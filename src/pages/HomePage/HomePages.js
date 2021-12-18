@@ -30,19 +30,20 @@ const HomePages = () => {
                 <div className={'description'}>
                     <Fade top>
                         <h2>Kristina Turdo</h2>
-                       {/* <p> An artist, photographer, designer<br/>
-                            is a creative person in everything. </p>*/}
+                       {/* */}
                     </Fade>
                 </div>
             </div>
-
+            {/* <div className={'project_text'}>
+                            <p> An artist, photographer, designer<br/>
+                                is a creative person in everything. </p>
+                        </div>*/}
 
           <div className={'my_project'}>
                 <div className={'project_wrapper'}>
                     <div className={'project_start'} >
-                    <img className={'project_img'} src={Rar} alt={'my dey'}/>
-
-                </div>
+                        <img className={'project_img'} src={Rar} alt={'my dey'}/>
+                    </div>
                       <div className={'project_between'}>
                           <img  className={'project_img'} src={Rara} alt={'my dey'}/>
                       </div>
