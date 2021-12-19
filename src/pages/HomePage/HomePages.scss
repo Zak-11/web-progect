@@ -15,7 +15,6 @@
 
 
 }
-
 .intro:after {
   content: "";
   display: block;
@@ -27,6 +26,7 @@
   top: 0;
   left: 0;
 }
+
 
 .intro_content {
   display: flex;
@@ -41,13 +41,11 @@
   z-index: 3;
 
 }
-
 .content {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 h1 {
   margin: 0;
   font-size: 10rem;
@@ -64,10 +62,23 @@ h1 {
 
 }
 
-.video {
+
+.container_flaunt{
+  padding: 0;
+  max-width: 1680px;
+  overflow-x: hidden;
+}
+
+.video-vimeo {
   position: relative;
+  width: 100%;
+
+}
+
+.video {
   z-index: 1;
-  padding-bottom: 56.25%;
+  padding: 56.25% 0 0 0;
+  position: relative;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -82,7 +93,12 @@ h1 {
   height: 100%;
 
 }
+@media screen and (max-width: 780px){
+  .video-vimeo{
+    margin-top: 75px;
 
+  }
+}
 @media screen and (max-width: 780px) {
   .intro_content {
     h1 {

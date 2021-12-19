@@ -16,6 +16,7 @@ import 'aos/dist/aos.css';
 import Fade from 'react-reveal/Fade';
 import Footer from "../../components/Footer/Footer";
 import RubberBand from 'react-reveal/RubberBand';
+import ReactPlayer from 'react-player'
 
 
 const HomePages = () => {
@@ -26,7 +27,31 @@ const HomePages = () => {
     return (
 
         <div className={'home_wrapper'}>
-          <div className={'home_page'}>
+
+            <div className="intro">
+                <div className={'container_flaunt'}>
+                    <div className={'video-vimeo'}>
+                        <div className="video">
+
+                            <iframe className="video__media"
+                                    src="https://player.vimeo.com/video/644432996?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp;muted=1&amp;controls=0"
+                                    frameBorder="0" allow="autoplay"
+                                    allowFullScreen=""/>
+
+                            {/*<video className="video__media" loop muted autoPlay>
+                            <source src={PowersLap} type="video/mp4"/>
+                        </video>*/}
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div className={'home_page'}>
                 <div className={'description'}>
                     <Fade top>
                         <h2>Kristina Turdo</h2>
@@ -82,16 +107,6 @@ const HomePages = () => {
 
 
 
-            <div className="intro">
-                <div className="video">
-                    <video className="video__media" loop muted autoPlay>
-                        <source src={PowersLap} type="video/mp4"/>
-                    </video>
-                </div>
-
-
-
-            </div>
 
 
 
