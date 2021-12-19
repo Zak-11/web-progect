@@ -6,7 +6,6 @@ import Weret from "../../image/image0 (1).jpeg";
 import Ygh from "../../image/AnyConv.com__1 (19).jpeg";
 import Des from "../../image/image0.jpeg";
 import Iop from "../../image/AnyConv.com__1 (22).jpeg";
-import PowersLap from '../../Videos/pexels-kampus-production-8037388.mp4'
 import Rar from './../../image/image0 (13).jpeg'
 import Tarin from './../../image/image1 (11).jpeg'
 import Rara from './../../image/image0 (12).jpeg'
@@ -16,7 +15,7 @@ import 'aos/dist/aos.css';
 import Fade from 'react-reveal/Fade';
 import Footer from "../../components/Footer/Footer";
 import RubberBand from 'react-reveal/RubberBand';
-import ReactPlayer from 'react-player'
+
 
 
 const HomePages = () => {
@@ -37,15 +36,9 @@ const HomePages = () => {
                                     src="https://player.vimeo.com/video/644432996?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp;muted=1&amp;controls=0"
                                     frameBorder="0" allow="autoplay"
                                     allowFullScreen=""/>
-
-                            {/*<video className="video__media" loop muted autoPlay>
-                            <source src={PowersLap} type="video/mp4"/>
-                        </video>*/}
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
 
