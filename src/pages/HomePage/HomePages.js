@@ -15,6 +15,7 @@ import 'aos/dist/aos.css';
 import Fade from 'react-reveal/Fade';
 import Footer from "../../components/Footer/Footer";
 import RubberBand from 'react-reveal/RubberBand';
+import {NavLink} from "react-router-dom";
 
 
 
@@ -27,35 +28,26 @@ const HomePages = () => {
 
         <div className={'home_wrapper'}>
 
-            <div className="intro">
-                <div className={'container_flaunt'}>
-                    <div className={'video-vimeo'}>
-                        <div className="video">
-
-                            <iframe className="video__media"
-                                    src="https://player.vimeo.com/video/644432996?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp;muted=1&amp;controls=0"
-                                    frameBorder="0" allow="autoplay"
-                                    allowFullScreen=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
 
             <div className={'home_page'}>
                 <div className={'description'}>
                     <Fade top>
-                        <h2>Kristina Turdo</h2>
-                       {/* */}
+                        <div className={'description_links'}>
+                            <div>
+                                <NavLink  to="/gallery">
+                                    <h2>ART /</h2>
+                                </NavLink>
+                            </div>
+                            <div>
+                            <NavLink  to="/photos">
+                                <h2>PHOTO</h2>
+                            </NavLink>
+                            </div>
+                        </div>
                     </Fade>
                 </div>
             </div>
-            {/* <div className={'project_text'}>
-                            <p> An artist, photographer, designer<br/>
-                                is a creative person in everything. </p>
-                        </div>*/}
+
 
           <div className={'my_project'}>
                 <div className={'project_wrapper'}>
@@ -77,9 +69,10 @@ const HomePages = () => {
               <div className={'about_wrapper'}>
                     <div className={'home_text'}>
                         <RubberBand>
-                        <h2> MY PROCESS OF WORK AND INSPIRATION</h2>
+                        <h2> “Art - as a passion”</h2>
                         </RubberBand>
                     </div>
+
                     <div className={'container_wrapper'}>
                         <div className={'container_start'}>
                             <img data-aos="fade-right" data-aos-duration="600" className={'shadow'} src={Trres}
@@ -97,7 +90,21 @@ const HomePages = () => {
                 </div>
 
 
+            <div className="intro">
+                <div className={'container_flaunt'}>
+                    <div className={'video-vimeo'}>
+                        <div className="video">
 
+                            <iframe className="video__media"
+                                    title="vimeo-player"
+                                    allow="autoplay"
+                                 src="https://player.vimeo.com/video/659086923?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp; ;muted=1&amp;controls=0"
+                                    frameBorder="0"
+                                    allowFullScreen=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

@@ -1,4 +1,4 @@
-$head_color: #252424;
+$head_color: black;
 
 .navbar {
   display: flex;
@@ -35,9 +35,10 @@ $head_color: #252424;
   list-style: none;
 
 }
-.home,
+
 .gallerya,
 .photo,
+.about,
 .blog,
 .contact,
  {
@@ -102,9 +103,10 @@ $head_color: #252424;
     z-index: 50;
 
   }
-  .home,
+
   .gallerya,
   .photo,
+  .about,
   .blog,
   .contact,
   {
