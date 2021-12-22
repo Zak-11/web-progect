@@ -12,9 +12,7 @@ import Rara from './../../image/image0 (12).jpeg'
 import Raser from './../../image/image2 (13).jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Fade from 'react-reveal/Fade';
 import Footer from "../../components/Footer/Footer";
-import RubberBand from 'react-reveal/RubberBand';
 import {NavLink} from "react-router-dom";
 
 
@@ -29,22 +27,24 @@ const HomePages = () => {
         <div className={'home_wrapper'}>
 
 
-            <div className={'home_page'}>
+           <div className={'home_page'}>
                 <div className={'description'}>
-                    <Fade top>
+
                         <div className={'description_links'}>
-                            <div>
+
+                            <div data-aos="flip-left"data-aos-duration="700">
                                 <NavLink  to="/gallery">
                                     <h2>ART /</h2>
                                 </NavLink>
                             </div>
-                            <div>
+                            <div data-aos="flip-left"data-aos-duration="700">
                             <NavLink  to="/photos">
                                 <h2>PHOTO</h2>
                             </NavLink>
                             </div>
+
                         </div>
-                    </Fade>
+
                 </div>
             </div>
 
@@ -66,11 +66,14 @@ const HomePages = () => {
 
 
 
+
               <div className={'about_wrapper'}>
                     <div className={'home_text'}>
-                        <RubberBand>
-                        <h2> “Art - as a passion”</h2>
-                        </RubberBand>
+                        <div  data-aos="fade-down" data-aos-duration="600">
+                            <h2 > “Art - as a passion”</h2>
+                        </div>
+
+
                     </div>
 
                     <div className={'container_wrapper'}>
@@ -90,17 +93,20 @@ const HomePages = () => {
                 </div>
 
 
-            <div className="intro">
+
+           <div className="intro">
                 <div className={'container_flaunt'}>
                     <div className={'video-vimeo'}>
                         <div className="video">
 
-                            <iframe className="video__media"
+                        {/* <iframe className="video__media"
+
                                     title="vimeo-player"
                                     allow="autoplay"
-                                 src="https://player.vimeo.com/video/659086923?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp; ;muted=1&amp;controls=0"
+                                 src="https://player.vimeo.com/video/659086923?&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=1&amp;portrait=1&amp;&muted=1;&amp;controls=0"
                                     frameBorder="0"
-                                    allowFullScreen=""/>
+                                    allowFullScreen=""/>*/}
+
                         </div>
                     </div>
                 </div>
@@ -121,9 +127,8 @@ const HomePages = () => {
                     <figure className="wave">
                         <img data-aos="fade-up-left" data-aos-duration="600" src={Des} alt={'my dey'}/>
                     </figure>
-                    <figure className="wave">
-                        <img data-aos="fade-up-left" data-aos-duration="600" src={Iop} alt={'my dey'}/>
-                    </figure>
+
+
                 </div>
             </div>
 

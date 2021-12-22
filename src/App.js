@@ -7,7 +7,8 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Header from "./components/Header/Header";
 import HomePages from "./pages/HomePage/HomePages";
-import Footer from "./components/Footer/Footer";
+
+
 
 
 
@@ -29,8 +30,9 @@ function App() {
     <Route path="/contact" element={<Contact/>}/>
 
 </Routes>
-
     </div>
+
+
   );
 }
 

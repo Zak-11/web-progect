@@ -5,14 +5,16 @@
 }
 
 .intro {
-  background: url("../../image/45.jpg") center no-repeat;
-  overflow: hidden;
+  background-image: url("../../image/image1 (9).jpeg") ;
   position: relative;
   background-size: cover;
   width: 100vw;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 .intro:after {
@@ -60,13 +62,14 @@ h1 {
   -webkit-background-clip: text;
   font-family: 'Corinthia', cursive;
 
+
 }
 
 
 .container_flaunt{
   padding: 0;
-  max-width: 1680px;
-  overflow-x: hidden;
+
+
 }
 
 .video-vimeo {
@@ -94,14 +97,18 @@ h1 {
 
 }
 @media screen and (max-width: 780px){
-  .video-vimeo{
-
+  .intro{
+    background-attachment: scroll;
+    height: 60vh;
 
   }
 }
 @media screen and (max-width: 780px) {
   .intro{
     margin-top: 50px;
+    background-attachment: scroll;
+    height: 60vh;
+
     h1 {
       top: 150px;
       font-size: 3rem;
@@ -113,6 +120,12 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+  .intro{
+    height: 60vh;
+    background-attachment: scroll;
+
+
+  }
   .intro_content {
     h1 {
       top: 150px;
@@ -124,6 +137,10 @@ h1 {
 }
 
 @media screen and (max-width: 370px) {
+  .intro{
+    background-attachment: scroll;
+    height: 60vh;
+  }
   .intro_content {
 
     h1 {
@@ -137,14 +154,17 @@ h1 {
 
 
 .home_page {
-  background: url("./../../image/Untitled666.png") center no-repeat ;
-  overflow: hidden;
+  background-image: url("./../../image/Untitled666.png");
+
   position: relative;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
@@ -190,6 +210,7 @@ h1 {
 @media screen and (max-width: 780px) {
   .home_page{
     height: 80vh;
+    background-attachment: scroll;
   }
   .description{
     align-items: center;
@@ -284,6 +305,7 @@ h2 {
   background-color: white;
   margin-top: 70px;
   margin-bottom: 100px;
+
 
 }
 
@@ -382,14 +404,14 @@ h2 {
   }
 
   .container_start {
-   margin: 20px 40px 20px 40px;
+   margin: 20px 40px 20px 50px;
 
   }
   .container_between {
-    margin: 20px 40px 20px 40px;
+    margin: 20px 40px 20px 50px;
   }
   .container_end {
-    margin: 20px 40px 20px 40px;
+    margin: 20px 40px 20px 50px;
   }
 
   h2 {

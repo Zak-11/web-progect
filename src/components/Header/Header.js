@@ -19,8 +19,7 @@ const Header = () => {
             </NavLink>
 
             <ul className={ isMobile ? 'nav-links-mobile' :'nav-links' }
-            onClick={() => setIsMobile(false)}
-            >
+            onClick={() => setIsMobile(false)}>
 
 
                 <NavLink className={'gallerya'} to="/gallery">
