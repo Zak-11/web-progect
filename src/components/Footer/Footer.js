@@ -4,7 +4,6 @@ import {faFacebookF, faInstagram, faTelegram} from "@fortawesome/free-brands-svg
 import './Footer.scss'
 
 
-
 const Footer = () => {
     return (
 
@@ -14,19 +13,19 @@ const Footer = () => {
 
                 <div className={'footer_icons'}>
                     <a href="https://t.me/Kristina_Zak">
-                        <FontAwesomeIcon className={'singnup'} icon={faTelegram} />
+                        <FontAwesomeIcon className={'singnup'} icon={faTelegram}/>
                     </a>
                     <a href="https://t.me/Kristina_Zak">
-                        <FontAwesomeIcon className={'singnup'} icon={faFacebookF} />
+                        <FontAwesomeIcon className={'singnup'} icon={faFacebookF}/>
                     </a>
                     <a href="https://t.me/Kristina_Zak">
-                        <FontAwesomeIcon className={'singnup'} icon={faInstagram} />
+                        <FontAwesomeIcon className={'singnup'} icon={faInstagram}/>
                     </a>
                 </div>
 
             </div>
         </div>
-                );
+    );
 };
 
 export default Footer;
