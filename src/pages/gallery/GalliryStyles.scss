@@ -48,18 +48,92 @@
 
   }
 }
-.galliry_home {
+
+.galliry_content{
   height: auto;
   width: 100vw;
   display: flex;
+  margin-left: 15px;
+  margin-top: 60px;
+
+}
+
+.gallery{
+  display: flex;
   flex-direction: column;
+
+
+}
+.gallery_block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  img{
+    width: 30vw;
+    height: auto;
+    cursor: pointer;
+  }
+}
+.gallery_text{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 2.3rem;
+
+
+  }
+  p{
+    font-family: 'Barlow Condensed', sans-serif;
+     text-transform: uppercase;
+      font-weight: normal;
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 1.3rem;
+
+  }
+}
+@media (max-width: 780px) {
+  .gallery_block {
+    flex-wrap: wrap;
+  }
+  .gallery_text {
+
+    h2 {
+      margin-top: 20px;
+      padding-bottom: 5px;
+      font-size: 20px;
+      line-height: 2.3rem;
+    }
+
+    p {
+      font-size: 13px;
+      letter-spacing: 0px;
+      line-height: 1.2rem;
+    }
+  }
+}
+/*.galliry_home {
+  height: auto;
+  width: 100vw;
+  display: flex;
+
   background-color: white;
 }
 
 .gallery{
   line-height:0;
-  -webkit-column-count:5; /* split it into 5 columns */
-  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -webkit-column-count:5; !* split it into 5 columns *!
+  -webkit-column-gap:5px; !* give it a 5px gap between columns *!
   -moz-column-count:5;
   -moz-column-gap:5px;
   column-count:5;
@@ -68,12 +142,12 @@
   img {
     width: 100% !important;
     height: auto !important;
-    margin-bottom:5px; /* to match column gap */
-    /*   filter: grayscale(100%);
+    margin-bottom:5px; !* to match column gap *!
+    !*   filter: grayscale(100%);
        &:hover {
        filter:none;
 
-     }*/
+     }*!
   }
 }
 
@@ -90,5 +164,5 @@
     -webkit-column-count: 2;
     column-count:         2;
   }
-}
+}*/
 

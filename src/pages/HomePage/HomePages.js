@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './HomePages.scss'
 import Trres from './../../image/Untitled2.png'
 import Tar from './../../image/Untitled5855.png'
@@ -16,8 +16,13 @@ import {NavLink} from "react-router-dom";
 
 
 const HomePages = () => {
-    AOS.init()
+    useEffect(() => {
+        AOS.init({
+            duration : 2000
+        });
 
+
+    }, []);
     return (
 
         <div className={'home_wrapper'}>
@@ -28,12 +33,12 @@ const HomePages = () => {
 
                     <div className={'description_links'}>
 
-                        <div data-aos="flip-left" data-aos-duration="700">
+                        <div data-aos="flip-left" data-aos-duration="3000">
                             <NavLink to="/gallery">
                                 <h2>ART /</h2>
                             </NavLink>
                         </div>
-                        <div data-aos="flip-left" data-aos-duration="700">
+                        <div data-aos="flip-left" data-aos-duration="3000">
                             <NavLink to="/photos">
                                 <h2>PHOTO</h2>
                             </NavLink>
@@ -63,7 +68,7 @@ const HomePages = () => {
 
             <div className={'about_wrapper'}>
                 <div className={'home_text'}>
-                    <div data-aos="fade-down" data-aos-duration="600">
+                    <div data-aos="fade-down" data-aos-duration="2000">
                         <h2> “Art - as a passion”</h2>
                     </div>
 
@@ -72,15 +77,15 @@ const HomePages = () => {
 
                 <div className={'container_wrapper'}>
                     <div className={'container_start'}>
-                        <img data-aos="fade-right" data-aos-duration="600" className={'shadow'} src={Trres}
+                        <img data-aos="fade-right" data-aos-duration="1000" className={'shadow'} src={Trres}
                              alt={'my dey'}/>
                     </div>
                     <div className={'container_between'}>
-                        <img data-aos="fade-left" data-aos-duration="600" className={'shadow'} src={Tarin}
+                        <img data-aos="fade-left" data-aos-duration="1500" className={'shadow'} src={Tarin}
                              alt={'my dey'}/>
                     </div>
                     <div className={'container_end'}>
-                        <img className={'shadow'} data-aos="fade-up-right" data-aos-duration="600" src={Tar}
+                        <img className={'shadow'} data-aos="fade-up-right" data-aos-duration="2000" src={Tar}
                              alt={'my dey'}/>
                     </div>
                 </div>
