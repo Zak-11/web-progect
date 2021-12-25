@@ -18,7 +18,8 @@ const products = [
         price: '$35',
         photo: Ferta,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
         id: 2,
@@ -27,6 +28,8 @@ const products = [
         price: '$35',
         photo: Weret,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Tramonti e albe',
+        descrP:'vessel of the soul',
     },
     {
         id:3,
@@ -35,6 +38,8 @@ const products = [
         price: '$35',
         photo: Fta,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Freedom',
+        descrP:'Freedom in mind, in the soul.',
     },
 
 ]
@@ -55,26 +60,29 @@ const Gallery = () => {
 
                 <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
                     <img src={Dt} alt={'page'}/>
-                    <h1 data-aos="flip-left" data-aos-duration="3000">Gallery</h1>
+                    <h1 data-aos="flip-left" data-aos-duration="3000">GALLERY</h1>
                 </div>
                 <div className="intro_content">
-
-
                 </div>
             </div>
+
+
 
             <div className={'galliry_content'}>
 
                 <div className={'gallery'}>
                     {products.map((product,id) => (
                         <div className={'gallery_block'} key={id}>
-                            <img data-aos="fade-up-right"
-                                 data-aos-duration="2000"
-                                src={product.photo}
-                                alt={product.imageAlt}/>
+                            <div className={'gallery_img'}>
+                                <img data-aos="fade-up-right"
+                                     data-aos-duration="2000"
+                                     src={product.photo}
+                                     alt={product.imageAlt}/>
+                            </div>
+
                             <div data-aos="fade-up-left" data-aos-duration="2000"className={'gallery_text'}>
-                                <h2>Blue silence</h2>
-                                <p>Sometimes words distract from hearing the silence.</p>
+                                <h2>{product.description}</h2>
+                                <p>{product.descrP}</p>
                             </div>
 
                         </div>
