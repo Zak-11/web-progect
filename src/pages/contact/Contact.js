@@ -20,69 +20,71 @@ const Contact = () => {
 
     return (
 
-        <div className={'contact_wrapper'}>
+        <div className={'wrapper'}>
 
 
-            <div className={'container'}>
+    <div className={'container'}>
 
-                <form ref={form} onSubmit={sendEmail}>
-                    <div className="row">
-                        <div className="col-25">
-                            <label htmlFor="fname">First Name</label>
-                        </div>
-                        <div className="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-25">
-                            <label htmlFor="lname">Last Name</label>
-                        </div>
-                        <div className="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-25">
-                            <label htmlFor="fname">Email</label>
-                        </div>
-                        <div className="col-75">
-                            <input type="text" id="fname" name="Email" placeholder="Your Email.."/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-25">
-                            <label htmlFor="Continent">Continent</label>
-                        </div>
-                        <div className="col-75">
-                            <select id="country" name="Continent">
-                                <option value="Asia">Asia</option>
-                                <option value="Africa">Africa</option>
-                                <option value="Europe">Europe</option>
-                                <option value="North America">North America</option>
-                                <option value="South America">South America</option>
-                                <option value="Australia">Australia</option>
-                                <option value="Antarctica">Antarctica</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-25">
-                            <label htmlFor="subject">Subject</label>
-                        </div>
-                        <div className="col-75">
+        <form ref={form} onSubmit={sendEmail}>
+            <div className="row">
+                <div className="col-25">
+                    <label htmlFor="fname">First Name</label>
+                </div>
+                <div className="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-25">
+                    <label htmlFor="lname">Last Name</label>
+                </div>
+                <div className="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-25">
+                    <label htmlFor="fname">Email</label>
+                </div>
+                <div className="col-75">
+                    <input type="text" id="fname" name="Email" placeholder="Your Email.."/>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-25">
+                    <label htmlFor="Continent">Continent</label>
+                </div>
+                <div className="col-75">
+                    <select id="country" name="Continent">
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-25">
+                    <label htmlFor="subject">Subject</label>
+                </div>
+                <div className="col-75">
                         <textarea type="submit"
                                   name="subject"
                                   placeholder="Write something.."
                                   style={{height: 150, margin: 0}}/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <input type="submit" value="Submit"/>
-                    </div>
-                </form>
+                </div>
             </div>
-        </div>
+            <div className="row">
+                <input type="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
 
 
     );

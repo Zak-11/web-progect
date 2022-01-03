@@ -25,7 +25,7 @@ const HomePages = () => {
     }, []);
     return (
 
-        <div className={'home_wrapper'}>
+        <div className={'wrapper'}>
 
 
             <div className={'home_page'}>

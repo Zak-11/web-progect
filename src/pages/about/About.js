@@ -13,16 +13,16 @@ const About = () => {
         }, []);
 
     return (
-        <div className={'about_page'}>
+        <div className={'wrapper'}>
 
-            <div className={'about_top'}>
-
+            <div data-aos="zoom-out-up" data-aos-duration="800"className={'about_top'}>
+                <h1 data-aos="flip-left" data-aos-duration="3000">ABOUT</h1>
             </div>
             <div className={'about_content'}>
 
-                <div data-aos="fade-up"
+                <div data-aos="zoom-out-up"
                      data-aos-duration="2500" className={'about_text'}>
-                    <h2>ABOUT KRISTINA ZAK</h2>
+                    <h2>KRISTINA ZAK</h2>
                     <p>As a Georgian - Osetian - Russian artist living in Switzerland my paintings ,<br/>
                         are a mirror of my life, soul, imaginations and experiences.My journey <br/>
                         in art, started in 2016, when I decided to professionally paint and  express<br/>
@@ -32,8 +32,7 @@ const About = () => {
                         travel journey,I look for inspiration and follow it. Step into my world and share<br/>
                         with me this happiness, freedom, harmony and passion.</p>
                 </div>
-                <div data-aos="fade-up-left"
-
+                <div data-aos="flip-right"
                      data-aos-duration="2500"className={'about_photo'}>
                     <img src={Dt} alt={'page'}/>
                 </div>

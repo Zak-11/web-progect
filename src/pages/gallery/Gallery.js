@@ -54,7 +54,7 @@ const Gallery = () => {
         });
     }, []);
     return (
-        <div className={'gallery_wrapper'}>
+        <div className={'wrapper'}>
 
             <div className={'gallery_top'}>
 

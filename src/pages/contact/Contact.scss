@@ -1,11 +1,8 @@
-.contact_wrapper {
-  height: 100vh;
-  background-color: #e9ecef;
+.contact_top{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
 
 
 
@@ -39,6 +36,7 @@ input[type=submit]:hover {
 
 .container {
   display: flex;
+
   flex-direction: column;
   width: 40%;
   border-radius: 5px;

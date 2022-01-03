@@ -1,14 +1,14 @@
-.about_page{
-  height: auto;
-  width: 100vw;
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-
 .about_top{
-  background-image: url("./../../image/IMG-20201222-WA0085.jpg");
+  background-image: url("./../../image/00_verzosa_winterlandscapes_jakob-owens-tb-2640x1485.webp");
   position: relative;
   background-size: cover;
-  height: 99vh;
+  height:100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   width: 100vw;
   padding-top: 3rem!important;
   padding-left: 1rem!important;
@@ -39,9 +40,7 @@
   flex-direction:column;
   width: 40vw ;
   flex-wrap: wrap;
-
-    font-style: normal;
-
+  font-style: normal;
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -51,27 +50,46 @@
   background-color: #fff;
   h2{
     padding-bottom: 1rem!important;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 2.3rem;
   }
   p{
-
       display: block;
       margin-block-start: 1em;
       margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
 
 
 
   }
 }
+
+
+
 @media (max-width: 900px) {
+.about_top{
+    height: 100vh;
+    background-attachment: scroll;
+
+}
   .about_text{
     width:80vh;
     margin-bottom: 40px;
+
+  h2 {
+    margin-top: 22px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 0;
+  }
   }
 }
 
 @media (max-width: 780px) {
+
   .about_content{
     flex-direction:column;
     justify-content: center;
@@ -89,4 +107,6 @@
 
 
   }
+
+
 }
