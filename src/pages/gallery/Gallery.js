@@ -3,9 +3,7 @@ import './GalliryStyles.scss'
 import Weret from "../../image/photo_2021-12-19_17-41-09.jpg";
 import Ferta from "../../image/IMG_2961.JPG";
 import Fta from "../../image/photo_2021-12-19_17-46-49.jpg";
-
 import Dt from "../../image/interyer-galerei-masrah-al-madina-04.jpg";
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -56,7 +54,6 @@ const Gallery = () => {
     return (
         <div className={'wrapper'}>
 
-            <div className={'gallery_top'}>
 
                 <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
                     <img src={Dt} alt={'page'}/>
@@ -64,7 +61,7 @@ const Gallery = () => {
                 </div>
                 <div className="intro_content">
                 </div>
-            </div>
+
 
 
 

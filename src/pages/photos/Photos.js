@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Photos.scss'
 import Fil from "../../image/neskolko-sovetov-ot-fotografa-chtoby-menshe-bylo-razocharovanij-pri-fotografirovanii-1.jpg";
 import Ferta from "../../image/photo_2021-11-07_02-07-42.jpg";
@@ -12,6 +12,7 @@ import Ftyre from "../../image/photo_2022-01-03_23-26-53.jpg";
 import Tyu from "../../image/photo_2022-01-03_23-14-13.jpg";
 import Werer from "../../image/photo_2022-01-03_22-53-37.jpg";
 import Wer from "../../image/photo_2022-01-03_22-23-57.jpg";
+import AOS from "aos";
 
 const photos = [
     {
@@ -138,11 +139,18 @@ const photos = [
 ]
 
 const Photos = () => {
+    useEffect(() => {
+        AOS.init({
+            duration : 4000
+        });
+    }, []);
+
+
     return (
         <div className={'wrapper'}>
-            <div data-aos-duration="800" className={'photo_head'}>
+            <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
                 <img src={Fil} alt={'page'}/>
-                <h1 >PHOTO</h1>
+                <h1 data-aos="flip-left" data-aos-duration="3000">PHOTO</h1>
             </div>
 
             <div className={'photo_content'}>
