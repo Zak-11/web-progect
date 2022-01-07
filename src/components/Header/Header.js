@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import logo from "../../image/112-removebg-preview.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import './Header.scss'
-import {faListUl, faWindowClose} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 
 
 const Header = () => {
@@ -22,8 +22,8 @@ const Header = () => {
             onClick={() => setIsMobile(false)}>
 
 
-                <NavLink className={'gallerya'} to="/gallery">
-                    <li >GALLERY</li>
+                <NavLink className={'gallerya'} to="/art">
+                    <li >ART</li>
                 </NavLink>
                 <NavLink className={'photo'} to="/photos">
                     <li>PHOTO</li>
@@ -44,8 +44,8 @@ const Header = () => {
             <div className={'mobile-menu-icon'}
                     onClick={() => {setIsMobile(!isMobile)}}
              >
-                {isMobile ? ( <FontAwesomeIcon icon={faWindowClose} color={' white'}/>)
-                    :(<FontAwesomeIcon icon={faListUl} color={' white'}/>
+                {isMobile ? ( <FontAwesomeIcon icon={faTimes} color={' white'}/>)
+                    :(<FontAwesomeIcon icon={faBars} color={' white'}/>
                     ) }
 
             </div>

@@ -39,6 +39,76 @@ const products = [
         description:'Freedom',
         descrP:'Freedom in mind, in the soul.',
     },
+    {
+        id: 4,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 5,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 6,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 7,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 8,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 9,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 10,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        photo: Ferta,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Blue silence',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
 
 ]
 
@@ -57,7 +127,7 @@ const Gallery = () => {
 
                 <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
                     <img src={Dt} alt={'page'}/>
-                    <h1 data-aos="flip-left" data-aos-duration="3000">GALLERY</h1>
+                    <h1 data-aos="flip-left" data-aos-duration="3000">ART</h1>
                 </div>
                 <div className="intro_content">
                 </div>

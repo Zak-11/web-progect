@@ -13,6 +13,8 @@ import Tyu from "../../image/photo_2022-01-03_23-14-13.jpg";
 import Werer from "../../image/photo_2022-01-03_22-53-37.jpg";
 import Wer from "../../image/photo_2022-01-03_22-23-57.jpg";
 import Ertu from "../../image/photo_2022-01-06_15-43-26.jpg";
+import Mallit from "../../image/photo_2022-01-03_22-56-14.jpg";
+import Malli from "../../image/photo_2022-01-07_18-40-53.jpg";
 
 import AOS from "aos";
 
@@ -84,7 +86,7 @@ const photos = [
         price: '$35',
         product: Werer,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Capri Island',
+        description:'Capri ',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
 
@@ -105,7 +107,7 @@ const photos = [
         price: '$35',
         product: Flater,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Zürich',
+        description:'Switzerland ',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -136,6 +138,25 @@ const photos = [
         product: Tyu,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'Singapore',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    },
+    {
+        id: 13,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        product: Malli,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Mallorca',
+        descrP:'Sometimes words distract from hearing the silence. ',
+    }, {
+        id: 14,
+        name: 'Nomad Tumbler',
+        href: '#',
+        price: '$35',
+        product: Mallit,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        description:'Tuscany',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
 ]

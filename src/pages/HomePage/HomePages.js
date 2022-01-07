@@ -34,7 +34,7 @@ const HomePages = () => {
                     <div className={'description_links'}>
 
                         <div data-aos="flip-left" data-aos-duration="3000">
-                            <NavLink to="/gallery">
+                            <NavLink to="/art">
                                 <h2>ART /</h2>
                             </NavLink>
                         </div>

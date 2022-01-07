@@ -52,6 +52,7 @@ $head_color: black;
   }
   li{
     font-family:  'Barlow Condensed', sans-serif;
+    margin-left: 20px;
   }
 }
 .singnup {
@@ -114,7 +115,7 @@ $head_color: black;
   .contact,
   {
     color: white;
-    text-align: center;
+
     padding: 32px;
     transition: all 0.5s ease-out;
     font-family:  'Barlow Condensed', sans-serif;
