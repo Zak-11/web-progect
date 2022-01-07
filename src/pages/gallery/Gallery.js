@@ -3,6 +3,11 @@ import './GalliryStyles.scss'
 import Weret from "../../image/photo_2021-12-19_17-41-09.jpg";
 import Ferta from "../../image/IMG_2961.JPG";
 import Fta from "../../image/photo_2021-12-19_17-46-49.jpg";
+import Ftar from "../../image/photo_2022-01-07_18-15-59555.jpg";
+import Wer from "../../image/photo_2022-01-07_18-19-27.jpg";
+import Rety from "../../image/photo_2022-01-07_18-21-47.jpg";
+import Qwer from "../../image/photo_2022-01-07_18-24-07.jpg";
+import Poiu from "../../image/photo_2022-01-07_18-24-54.jpg";
 import Dt from "../../image/interyer-galerei-masrah-al-madina-04.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -44,9 +49,9 @@ const products = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        photo: Ferta,
+        photo: Ftar,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
+        description:'Berlin',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -54,9 +59,9 @@ const products = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        photo: Ferta,
+        photo: Wer,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
+        description:'Flowle',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -64,9 +69,9 @@ const products = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        photo: Ferta,
+        photo: Rety,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
+        description:'Feather of hope ',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -74,9 +79,9 @@ const products = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        photo: Ferta,
+        photo: Qwer,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
+        description:'A sand storm',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -84,31 +89,12 @@ const products = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        photo: Ferta,
+        photo: Poiu,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
+        description:'After the rain ',
         descrP:'Sometimes words distract from hearing the silence. ',
-    },
-    {
-        id: 9,
-        name: 'Nomad Tumbler',
-        href: '#',
-        price: '$35',
-        photo: Ferta,
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
-        descrP:'Sometimes words distract from hearing the silence. ',
-    },
-    {
-        id: 10,
-        name: 'Nomad Tumbler',
-        href: '#',
-        price: '$35',
-        photo: Ferta,
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Blue silence',
-        descrP:'Sometimes words distract from hearing the silence. ',
-    },
+    }
+
 
 ]
 
@@ -141,13 +127,13 @@ const Gallery = () => {
                     {products.map((product,id) => (
                         <div className={'gallery_block'} key={id}>
                             <div className={'gallery_img'}>
-                                <img data-aos="fade-up-right"
+                                <img data-aos="zoom-out-right"
                                      data-aos-duration="2000"
                                      src={product.photo}
                                      alt={product.imageAlt}/>
                             </div>
 
-                            <div data-aos="fade-up-left" data-aos-duration="3000"className={'gallery_text'}>
+                            <div data-aos="zoom-out-left" data-aos-duration="3000"className={'gallery_text'}>
                                 <h2>{product.description}</h2>
                                 <p>{product.descrP}</p>
                             </div>
