@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../../image/pngwing.com (1).png";
+import logo from "../../image/112-removebg-preview.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import './Header.scss'
 import {faListUl, faWindowClose} from "@fortawesome/free-solid-svg-icons";

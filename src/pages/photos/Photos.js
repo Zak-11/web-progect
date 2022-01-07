@@ -12,6 +12,8 @@ import Ftyre from "../../image/photo_2022-01-03_23-26-53.jpg";
 import Tyu from "../../image/photo_2022-01-03_23-14-13.jpg";
 import Werer from "../../image/photo_2022-01-03_22-53-37.jpg";
 import Wer from "../../image/photo_2022-01-03_22-23-57.jpg";
+import Ertu from "../../image/photo_2022-01-06_15-43-26.jpg";
+
 import AOS from "aos";
 
 const photos = [
@@ -111,7 +113,7 @@ const photos = [
         name: 'Nomad Tumbler',
         href: '#',
         price: '$35',
-        product: Ferta,
+        product: Ertu,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'Venice',
         descrP:'Sometimes words distract from hearing the silence. ',
@@ -123,7 +125,7 @@ const photos = [
         price: '$35',
         product:  Ftyre,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        description:'Thailand',
+        description:'Bali',
         descrP:'Sometimes words distract from hearing the silence. ',
     },
     {
@@ -156,7 +158,8 @@ const Photos = () => {
             <div className={'photo_content'}>
                 {photos.map((photo,id)=>
                     <div className={'photo_wrapper'}key={id}>
-                        <img className={'photo_wrapper_img'}src={photo.product}/>
+                        <img data-aos="zoom-in-down"
+                             data-aos-duration="3000"className={'photo_wrapper_img'}src={photo.product}/>
 
                         <div className={'image_text'}>
                             <h2>{photo.description}</h2>

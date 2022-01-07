@@ -25,8 +25,9 @@ $head_color: black;
 }
 
 .header__logo {
-  width: 20vw;
-  height: 20vh;
+  width: 10vw;
+  height: 10vh;
+  margin-top: 40px;
 }
 
 .nav-links {
@@ -78,8 +79,10 @@ $head_color: black;
   .header__logo{
     width: 50%;
     height: 30%;
+    margin-top:0;
   }
   .logo {
+
     display: flex;
     position: absolute;
     align-items: start;

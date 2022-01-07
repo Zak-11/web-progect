@@ -77,7 +77,7 @@ const Gallery = () => {
                                      alt={product.imageAlt}/>
                             </div>
 
-                            <div data-aos="fade-up-left" data-aos-duration="2000"className={'gallery_text'}>
+                            <div data-aos="fade-up-left" data-aos-duration="3000"className={'gallery_text'}>
                                 <h2>{product.description}</h2>
                                 <p>{product.descrP}</p>
                             </div>

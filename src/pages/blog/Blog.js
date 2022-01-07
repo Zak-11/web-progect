@@ -7,7 +7,10 @@ const Blog = () => {
 
     return (
         <div className={'wrapper'}>
-            <h1 data-aos="flip-left" data-aos-duration="3000">BLOG</h1>
+            <div className={'blog_wrapper'}>
+                <h1 data-aos="flip-left" data-aos-duration="3000">BLOG</h1>
+            </div>
+
 
         </div>
 
