@@ -52,7 +52,7 @@ const products = [
         photo: Ftar,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'Berlin',
-        descrP:'Sometimes words distract from hearing the silence. ',
+        descrP:' ',
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ const products = [
         photo: Wer,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'Flowle',
-        descrP:'Sometimes words distract from hearing the silence. ',
+        descrP:' ',
     },
     {
         id: 6,
@@ -72,7 +72,7 @@ const products = [
         photo: Rety,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'Feather of hope ',
-        descrP:'Sometimes words distract from hearing the silence. ',
+        descrP:' ',
     },
     {
         id: 7,
@@ -82,7 +82,7 @@ const products = [
         photo: Qwer,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'A sand storm',
-        descrP:'Sometimes words distract from hearing the silence. ',
+        descrP:' ',
     },
     {
         id: 8,
@@ -92,7 +92,7 @@ const products = [
         photo: Poiu,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         description:'After the rain ',
-        descrP:'Sometimes words distract from hearing the silence. ',
+        descrP:' ',
     }
 
 
@@ -111,7 +111,7 @@ const Gallery = () => {
         <div className={'wrapper'}>
 
 
-                <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
+                <div data-aos="zoom-out-up" data-aos-duration="800" className={'gallery_head'}>
                     <img src={Dt} alt={'page'}/>
                     <h1 data-aos="flip-left" data-aos-duration="3000">ART</h1>
                 </div>
@@ -128,12 +128,12 @@ const Gallery = () => {
                         <div className={'gallery_block'} key={id}>
                             <div className={'gallery_img'}>
                                 <img data-aos="zoom-out-right"
-                                     data-aos-duration="2000"
+                                     data-aos-duration="1000"
                                      src={product.photo}
                                      alt={product.imageAlt}/>
                             </div>
 
-                            <div data-aos="zoom-out-left" data-aos-duration="3000"className={'gallery_text'}>
+                            <div data-aos="zoom-out-left" data-aos-duration="3000" className={'gallery_text'}>
                                 <h2>{product.description}</h2>
                                 <p>{product.descrP}</p>
                             </div>
