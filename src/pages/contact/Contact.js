@@ -3,12 +3,13 @@ import Con from '../../image/photo_2022-01-03_23-10-42.jpg'
 import emailjs from 'emailjs-com'
 import './Contact.scss'
 import AOS from "aos";
-import color from "color";
+import {useForm} from "react-hook-form";
+
 
 
 const Contact = () => {
 
-    useEffect(() => {
+   useEffect(() => {
         AOS.init({
             duration: 4000
         });
@@ -16,7 +17,7 @@ const Contact = () => {
 
     const form = useRef();
 
-    function sendEmail(e) {
+    function sendEmail(data,e) {
         e.preventDefault();
         emailjs.sendForm('service_6r21bzq', 'template_y4mbqsx', e.target, 'user_7fdrdAgJSGYSdvUh1dWK5')
             .then((result) => {
@@ -25,8 +26,20 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset()
+        alert('You have successfully subscribed');
+        reset()
     }
 
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+        reset
+    } = useForm({
+        mode: "onBlur"
+    });
+    console.log(watch("example")); // you can watch individual input by pass the name of the input
 
     return (
 
@@ -40,13 +53,27 @@ const Contact = () => {
                         <h2>CONTACT</h2>
                     </div>
 
-                    <form  data-aos="zoom-in" data-aos-duration="2500"ref={form} onSubmit={sendEmail}>
+                    <form  data-aos="zoom-in" data-aos-duration="2500" ref={form} onSubmit={handleSubmit(sendEmail)}  >
                         <div className="row">
                             <div className="col-25">
                                 <label htmlFor="fname">Name</label>
                             </div>
                             <div className="col-75">
-                                <input type="text" id="fname" name="firstname" placeholder="Your name..."/>
+                                <input type="text"
+                                       id="fname"
+                                       name="firstname"
+                                       placeholder="Your name..."
+                                       {...register("name", {
+                                           required: true,
+                                           minLength:3,
+                                           maxLength: 20,
+                                           pattern: /^[A-Za-z]+$/i,})}
+                                />
+                                {errors?.name?.type === "required" && <p className={'errors'}>This field is required</p>}
+                                {errors?.name?.type === "minLength" && (<p className={'errors'}>Name cannot be more than 3 characters</p>)}
+                                {errors?.name?.type === "maxLength" && (<p className={'errors'}>First name cannot exceed 20 characters</p>)}
+                                {errors?.name?.type === "pattern" && (<p className={'errors'}>Alphabetical characters only</p>)}
+
                             </div>
                         </div>
 
@@ -55,7 +82,17 @@ const Contact = () => {
                                 <label htmlFor="fname">Email</label>
                             </div>
                             <div className="col-75">
-                                <input type="text" id="fname" name="Email" placeholder="Your Email..."/>
+                                <input type="text"
+                                       id="fname"
+                                       name="Email"
+                                       placeholder="Your Email..."
+                                       {...register("Email", {
+                                           required: true,
+                                           pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                                       })}
+                                />
+                                {errors?.name?.type === "required" && <p className={'errors'}>This field is required</p>}
+                                {errors?.Email?.type === "pattern" && (<p className={'errors'}>Enter a valid email address</p>)}
                             </div>
                         </div>
                         <div className="row">
@@ -64,9 +101,10 @@ const Contact = () => {
                                     <label htmlFor="Continent">Country</label>
                                 </div>
                                 <div className="col-75">
-                                <select id="country" name="country" className="form-control">
-                                    <option value="Afghanistan"></option>
-                                    <option value="Afghanistan">Afghanistan</option>
+                                    <select id="country" name="country"  className="form-control"
+                                            {...register("Country", {
+                                                required: true,})}>
+                                        <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
@@ -327,10 +365,14 @@ const Contact = () => {
                                     <option value="Yemen">Yemen</option>
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
+
                                 </select>
+                                    {errors?.Country?.type === "required" && <p className={'errors'}>Please select your country of residence.</p>}
                                 </div>
                             </div>
                         </div>
+
+
                         <div className="row">
                             <div className="col-25">
                                 <label htmlFor="subject">Subject</label>
@@ -343,13 +385,14 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="row">
-                            <input type="submit" value="Submit"/>
+                            <input type="submit"
+                                   value="Submit"/>
                         </div>
                     </form>
                 </div>
 
                 <div data-aos="zoom-in" data-aos-duration="1500" className={'contact_left'}>
-                    <img src={Con} className={'contact_photo'}/>
+                    <img src={Con} className={'contact_photo'} alt={'contact photo'}/>
                 </div>
             </div>
 

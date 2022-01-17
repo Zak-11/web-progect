@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import './Photos.scss'
-import Fil from "../../image/neskolko-sovetov-ot-fotografa-chtoby-menshe-bylo-razocharovanij-pri-fotografirovanii-1.jpg";
 import Ferta from "../../image/photo_2021-11-07_02-07-42.jpg";
 import Weret from "../../image/IMG_24226.jpg";
 import Fta from "../../image/photo_2021-11-06_20-54-43.jpg";
@@ -171,16 +170,15 @@ const Photos = () => {
 
     return (
         <div className={'wrapper'}>
-            <div data-aos="zoom-out-up" data-aos-duration="800"className={'gallery_head'}>
-                <img src={Fil} alt={'page'}/>
+            <div data-aos="zoom-out-up" data-aos-duration="800" className={'photo_top'}>
                 <h1 data-aos="flip-left" data-aos-duration="3000">PHOTO</h1>
             </div>
 
             <div className={'photo_content'}>
                 {photos.map((photo,id)=>
-                    <div className={'photo_wrapper'}key={id}>
+                    <div className={'photo_wrapper'} key={id}>
                         <img data-aos="zoom-in-down"
-                             data-aos-duration="3000"className={'photo_wrapper_img'}src={photo.product}/>
+                             data-aos-duration="3000" className={'photo_wrapper_img'} src={photo.product} alt={'photo'}/>
 
                         <div className={'image_text'}>
                             <h2>{photo.description}</h2>

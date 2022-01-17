@@ -8,7 +8,6 @@ import Wer from "../../image/photo_2022-01-07_18-19-27.jpg";
 import Rety from "../../image/photo_2022-01-07_18-21-47.jpg";
 import Qwer from "../../image/photo_2022-01-07_18-24-07.jpg";
 import Poiu from "../../image/photo_2022-01-07_18-24-54.jpg";
-import Dt from "../../image/interyer-galerei-masrah-al-madina-04.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -111,8 +110,7 @@ const Gallery = () => {
         <div className={'wrapper'}>
 
 
-                <div data-aos="zoom-out-up" data-aos-duration="800" className={'gallery_head'}>
-                    <img src={Dt} alt={'page'}/>
+                <div data-aos="zoom-out-up" data-aos-duration="800" className={'gallery_top'}>
                     <h1 data-aos="flip-left" data-aos-duration="3000">ART</h1>
                 </div>
                 <div className="intro_content">
