@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Con from '../../image/photo_2022-01-03_23-10-42.jpg'
 import emailjs from 'emailjs-com'
 import './Contact.scss'
@@ -8,6 +8,7 @@ import {useForm} from "react-hook-form";
 
 
 const Contact = () => {
+
 
    useEffect(() => {
         AOS.init({
@@ -26,7 +27,8 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset()
-        alert('You have successfully subscribed');
+
+        alert((watch(["firstName","message"])));
         reset()
     }
 
@@ -37,9 +39,16 @@ const Contact = () => {
         formState: { errors },
         reset
     } = useForm({
-        mode: "onBlur"
+        mode: "onBlur",
+        defaultValues: {
+            firstName: "",
+            email:"",
+            country: "",
+            message: "You have successfully subscribed to updates."
+        }
     });
-    console.log(watch("example")); // you can watch individual input by pass the name of the input
+
+
 
     return (
 
@@ -56,43 +65,40 @@ const Contact = () => {
                     <form  data-aos="zoom-in" data-aos-duration="2500" ref={form} onSubmit={handleSubmit(sendEmail)}  >
                         <div className="row">
                             <div className="col-25">
-                                <label htmlFor="fname">Name</label>
+                                <label htmlFor="name">Name</label>
                             </div>
                             <div className="col-75">
                                 <input type="text"
-                                       id="fname"
-                                       name="firstname"
                                        placeholder="Your name..."
-                                       {...register("name", {
+                                       {...register("firstName", {
                                            required: true,
                                            minLength:3,
                                            maxLength: 20,
                                            pattern: /^[A-Za-z]+$/i,})}
                                 />
-                                {errors?.name?.type === "required" && <p className={'errors'}>This field is required</p>}
-                                {errors?.name?.type === "minLength" && (<p className={'errors'}>Name cannot be more than 3 characters</p>)}
-                                {errors?.name?.type === "maxLength" && (<p className={'errors'}>First name cannot exceed 20 characters</p>)}
-                                {errors?.name?.type === "pattern" && (<p className={'errors'}>Alphabetical characters only</p>)}
+
+                                {errors?.firstName?.type === "required" && <p className={'errors'}>This field is required</p>}
+                                {errors?.firstName?.type === "minLength" && (<p className={'errors'}>Name cannot be more than 3 characters</p>)}
+                                {errors?.firstName?.type === "maxLength" && (<p className={'errors'}>First name cannot exceed 20 characters</p>)}
+                                {errors?.firstName?.type === "pattern" && (<p className={'errors'}>Alphabetical characters only</p>)}
 
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="col-25">
-                                <label htmlFor="fname">Email</label>
+                                <label htmlFor="email">Email</label>
                             </div>
                             <div className="col-75">
                                 <input type="text"
-                                       id="fname"
-                                       name="Email"
                                        placeholder="Your Email..."
-                                       {...register("Email", {
-                                           required: true,
+                                       {...register("email", {
+                                           required: 'This is required',
                                            pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                                        })}
                                 />
-                                {errors?.name?.type === "required" && <p className={'errors'}>This field is required</p>}
-                                {errors?.Email?.type === "pattern" && (<p className={'errors'}>Enter a valid email address</p>)}
+                                {errors?.email?.type === "required" && <p className={'errors'}>This field is required</p>}
+                                {errors?.email?.type === "pattern" && (<p className={'errors'}>Enter a valid email address</p>)}
                             </div>
                         </div>
                         <div className="row">
@@ -101,9 +107,10 @@ const Contact = () => {
                                     <label htmlFor="Continent">Country</label>
                                 </div>
                                 <div className="col-75">
-                                    <select id="country" name="country"  className="form-control"
-                                            {...register("Country", {
-                                                required: true,})}>
+                                    <select className="form-control"
+                                            {...register("country", {
+                                                required: 'This is required',})}>
+
                                         <option></option>
                                         <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
@@ -368,7 +375,7 @@ const Contact = () => {
                                     <option value="Zimbabwe">Zimbabwe</option>
 
                                 </select>
-                                    {errors?.Country?.type === "required" && <p className={'errors'}>Please select your country of residence.</p>}
+                                    {errors?.country?.type === "required" && <p className={'errors'}>Please select your country of residence.</p>}
                                 </div>
                             </div>
                         </div>
@@ -387,7 +394,9 @@ const Contact = () => {
                         </div>
                         <div className="row">
                             <input type="submit"
-                                   value="Submit"/>
+                                   value="Submit"
+                              />
+
                         </div>
                     </form>
                 </div>
