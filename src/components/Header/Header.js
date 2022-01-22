@@ -9,8 +9,14 @@ import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     const [isMobile, setIsMobile] =useState(false)
 
+
     return (
+
+
+
         <div className={'navbar'}>
+
+
             <NavLink className={"logo"} to={'./'}>
                 <h2 className={'navbar-logo'}>
                     <img className={'header__logo'}  src={logo} alt="Logo"/>

@@ -1,14 +1,18 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import Con from '../../image/photo_2022-01-03_23-10-42.jpg'
 import emailjs from 'emailjs-com'
 import './Contact.scss'
 import AOS from "aos";
 import {useForm} from "react-hook-form";
+import {useAlert} from "react-alert";
+
+
+
 
 
 
 const Contact = () => {
-
+    const alert = useAlert()
 
    useEffect(() => {
         AOS.init({
@@ -18,7 +22,7 @@ const Contact = () => {
 
     const form = useRef();
 
-    function sendEmail(data,e) {
+    function sendEmail(data,e ) {
         e.preventDefault();
         emailjs.sendForm('service_6r21bzq', 'template_y4mbqsx', e.target, 'user_7fdrdAgJSGYSdvUh1dWK5')
             .then((result) => {
@@ -28,9 +32,12 @@ const Contact = () => {
             });
         e.target.reset()
 
-        alert((watch(["firstName","message"])));
+        alert.show ((watch(["firstName","message"])));
+
+
         reset()
     }
+
 
     const {
         register,
@@ -44,13 +51,14 @@ const Contact = () => {
             firstName: "",
             email:"",
             country: "",
-            message: "You have successfully subscribed to updates."
+            message: "\nMessage sent."
         }
     });
 
 
 
     return (
+
 
 
         <div className={'wrapper'}>
@@ -63,6 +71,8 @@ const Contact = () => {
                     </div>
 
                     <form  data-aos="zoom-in" data-aos-duration="2500" ref={form} onSubmit={handleSubmit(sendEmail)}  >
+
+
                         <div className="row">
                             <div className="col-25">
                                 <label htmlFor="name">Name</label>
@@ -392,13 +402,17 @@ const Contact = () => {
                                   style={{height: 150, margin: 0}}/>
                             </div>
                         </div>
+
+
                         <div className="row">
                             <input type="submit"
                                    value="Submit"
                               />
 
                         </div>
+
                     </form>
+
                 </div>
 
                 <div data-aos="zoom-in" data-aos-duration="1500" className={'contact_left'}>
@@ -408,6 +422,7 @@ const Contact = () => {
 
 
         </div>
+
 
 
     );
