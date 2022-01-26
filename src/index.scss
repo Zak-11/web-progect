@@ -16,11 +16,14 @@ ul {
 li{
   list-style: none;
   cursor: pointer;
+
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+
 }
 .wrapper{
   width: 100vw;

@@ -28,22 +28,24 @@ const Header = () => {
             onClick={() => setIsMobile(false)}>
 
 
-                <NavLink className={'gallerya'} to="/art">
-                    <li >ART</li>
-                </NavLink>
-                <NavLink className={'photo'} to="/photos">
-                    <li>PHOTO</li>
-                </NavLink>
-                <NavLink className={'blog'} to="/blog">
-                    <li>BLOG</li>
-                </NavLink>
+    <NavLink className={'gallerya'} to="/art">
+        <li >ART</li>
+    </NavLink>
+    <NavLink className={'photo'} to="/photos">
+        <li>PHOTO</li>
+    </NavLink>
+    <NavLink className={'blog'} to="/blog">
+        <li>BLOG</li>
+    </NavLink>
 
-                <NavLink className={'about'} to="/about">
-                    <li>ABOUT</li>
-                </NavLink>
-                <NavLink className={'contact'} to="/contact">
-                    <li>CONTACT</li>
-                </NavLink>
+    <NavLink className={'about'} to="/about">
+        <li>ABOUT</li>
+    </NavLink>
+    <NavLink className={'contact'} to="/contact">
+        <li>CONTACT</li>
+    </NavLink>
+
+
 
 
             </ul>

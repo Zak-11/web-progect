@@ -1,7 +1,10 @@
+@import "~video-react/styles/scss/video-react";
 .blog_wrapper{
   display: flex;
   width: 100vw;
   height: 100vh;
   background-color: #8e8f91;
+  align-items: center;
+  justify-content: center;
 }
 

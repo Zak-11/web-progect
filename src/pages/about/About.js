@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Dt from "../../image/rte.png";
 
+
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -33,7 +34,7 @@ const About = () => {
                         with me this happiness, freedom, harmony and passion.</p>
                 </div>
                 <div data-aos="flip-right"
-                     data-aos-duration="2500"className={'about_photo'}>
+                     data-aos-duration="2500" className={'about_photo'}>
                     <img src={Dt} alt={'page'}/>
                 </div>
 
