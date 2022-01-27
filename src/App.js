@@ -9,29 +9,49 @@ import Header from "./components/Header/Header";
 import HomePages from "./pages/HomePage/HomePages";
 import Footer from "./components/Footer/Footer";
 import Scrolling from "./components/Scrolling/Scrolling";
+import Spinner from "./components/Spinner/Spinner";
 
 
+class App extends React.Component {
+    state = {
+        loading: true,
+    };
 
-function App() {
-    return (
+    componentDidMount() {
+        this.isLoading = setTimeout(() => {
+            this.setState({loading: false})
+        }, 2300);
+    }
 
-        <>
-            <Header/>
-            <Routes>
-                <Route path="/" element={<HomePages/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/art" element={<Gallery/>}/>
-                <Route path="/photos" element={<Photos/>}/>
-                <Route path="/blog" element={<Blog/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-            </Routes>
+    componentWillUnmount() {
+        clearTimeout(this.isLoading);
+    }
 
-            <Footer/>
-            <Scrolling/>
-        </>
+    timer = () => setTimeout(() => {
+        this.setState({loading: false})
+    }, 2300);
 
+    render() {
+        const {loading} = this.state;
+        return (
+            loading ? (<Spinner/>)
+                : (<>
+                        <Header/>
+                        <Routes>
+                            <Route path="/" element={<HomePages/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/art" element={<Gallery/>}/>
+                            <Route path="/photos" element={<Photos/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
+                            <Route path="/contact" element={<Contact/>}/>
+                        </Routes>
 
-    );
+                        <Footer/>
+                        <Scrolling/>
+
+                    </> )
+        )
+    }
 }
 
 export default App;
